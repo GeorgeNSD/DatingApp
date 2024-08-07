@@ -46,7 +46,7 @@ public class DataContext(DbContextOptions options) : IdentityDbContext<AppUser, 
 
       builder.Entity<Message>()
          .HasOne(x => x.Recipient)
-         .WithMany(x => x.MessagesRecieved)
+         .WithMany(x => x.MessagesReceived)
          .OnDelete(DeleteBehavior.Restrict);
 
       builder.Entity<Message>()

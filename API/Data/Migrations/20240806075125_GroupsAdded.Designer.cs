@@ -400,7 +400,7 @@ namespace API.Data.Migrations
             modelBuilder.Entity("API.Message", b =>
                 {
                     b.HasOne("API.Entities.AppUser", "Recipient")
-                        .WithMany("MessagesRecieved")
+                        .WithMany("MessagesReceived")
                         .HasForeignKey("RecipientId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -482,7 +482,7 @@ namespace API.Data.Migrations
 
                     b.Navigation("LikedUsers");
 
-                    b.Navigation("MessagesRecieved");
+                    b.Navigation("MessagesReceived");
 
                     b.Navigation("MessagesSent");
 
