@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9df2e5fb-86a7-4d18-ad68-92a33aed197d/resourceGroups/DatingApp-Project-Resources/providers/Microsoft.Web/sites/DatingApp-Course-Resources",
+    "appService.deploySubpath": "API\\bin\\Publish"
+}
